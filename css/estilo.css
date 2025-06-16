@@ -42,10 +42,7 @@ header nav a {
 .banner::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -76,7 +73,7 @@ header nav a {
 }
 
 .card {
-  background: rgb(255, 255, 255);
+  background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -101,139 +98,12 @@ footer {
   height: auto;
 }
 
-.email-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.icon-email {
-  width: 24px;
-  height: 24px;
-}
-
-.email-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.email-box h3 {
-  margin: 0;
-}
-
-.email-box p a {
-  color: #38f9d7;
-  text-decoration: none;
-}
-
-.email-box p a:hover {
-  text-decoration: underline;
-}
-
-.email-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.icon-phone {
-  width: 24px;
-  height: 24px;
-}
-
-
-
-
-
-
-
-
-.phone-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.icon-phone {
-  width: 24px;
-  height: 24px;
-}
-
-.phone-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.phone-box h3 {
-  margin: 0;
-}
-
-.phone-box p a {
-  color: #38f9d7;
-  text-decoration: none;
-}
-
-.phone-box p a:hover {
-  text-decoration: underline;
-}
-
-.phone-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.icon-phone {
-  width: 24px;
-  height: 24px;
-}
-
-
-
-
-
-
-
-
-.instagram-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
+.icon-email,
+.icon-phone,
 .icon-instagram {
-  width: 24px;
-  height: 24px;
-}
-
-.instagram-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.instagram-box h3 {
-  margin: 0;
-}
-
-.instagram-box p a {
-  color: #38f9d7;
-  text-decoration: none;
-}
-
-.instagram-box p a:hover {
-  text-decoration: underline;
-}
-
-.instagram-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.icon-instagram {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  vertical-align: middle;
 }
