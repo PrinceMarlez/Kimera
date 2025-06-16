@@ -1,24 +1,23 @@
-/* Reset básico e fonte */
-* {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
-  background-color: #f5f5f5;
-  color: #333;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Header */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 header {
   background: linear-gradient(90deg, #43e97b, #38f9d7);
   color: white;
@@ -26,7 +25,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-shrink: 0;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
 }
 
 header nav a {
@@ -34,24 +37,11 @@ header nav a {
   margin-left: 20px;
   text-decoration: none;
   font-weight: 600;
-  transition: opacity 0.3s ease;
 }
 
-header nav a:hover,
-header nav a.active {
-  opacity: 0.8;
-}
-
-/* Logo */
-.logo {
-  width: 150px;
-  height: auto;
-}
-
-/* Banner */
 .banner {
   position: relative;
-  background-image: url('../src/IMG_7308.png');
+  background-image: url('/src/IMG_7308.png');
   background-size: cover;
   background-position: center;
   height: 350px;
@@ -60,18 +50,13 @@ header nav a.active {
   align-items: center;
   color: white;
   text-align: center;
-  flex-shrink: 0;
 }
 
 .banner::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
 }
 
 .banner-content {
@@ -79,21 +64,10 @@ header nav a.active {
   z-index: 1;
 }
 
-.banner h1 {
-  font-size: 2rem;
-}
-
-.banner p {
-  font-size: 1.1rem;
-  margin-top: 10px;
-}
-
-/* Services */
 .services {
   padding: 40px 20px;
   max-width: 1000px;
-  margin: 20px auto;
-  flex-grow: 1;
+  margin: 0 auto;
 }
 
 .services h2 {
@@ -103,37 +77,35 @@ header nav a.active {
 }
 
 .card {
-  background: #fff;
+  background: white;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 20px;
   margin-bottom: 20px;
 }
 
-/* Ícones de contato - tamanho corrigido */
-.icon-email,
-.icon-phone,
-.icon-instagram {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-}
+/* Contato - ícones */
 
-/* Caixas de contato */
 .email-box,
 .phone-box,
 .instagram-box {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 15px;
+}
+
+.icon-email,
+.icon-phone,
+.icon-instagram {
+  width: 24px;
+  height: 24px;
 }
 
 .email-box h3,
 .phone-box h3,
 .instagram-box h3 {
   margin: 0;
-  min-width: 80px;
 }
 
 .email-box p a,
@@ -149,12 +121,11 @@ header nav a.active {
   text-decoration: underline;
 }
 
-/* Footer fixado no fim */
 footer {
   background-color: #222;
   color: #ccc;
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px;
   font-size: 0.9rem;
-  flex-shrink: 0;
+  margin-top: auto;
 }
