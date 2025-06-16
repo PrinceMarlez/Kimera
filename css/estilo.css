@@ -41,7 +41,7 @@ header nav a {
 
 .banner {
   position: relative;
-  background-image: url('/src/IMG_7308.png');
+  background-image: url('src/IMG_7308.png');
   background-size: cover;
   background-position: center;
   height: 350px;
